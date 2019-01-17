@@ -148,3 +148,66 @@ footer .social a {
 footer .social a:hover {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+    }
+    
+    aside {
+        width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    
+    aside .ad {
+            width: 40%;
+        }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    header .menu {
+        width: 100%;
+        background: rgba(255, 255, 255, .2);
+        text-align: center;
+        padding: 20px;
+    }
+    
+    header .logo {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        font-size: 20px;
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    footer .autor{
+        margin-bottom: 20px;
+    }
+    
+    aside .ad {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    aside {
+        display: none;
+    }
+}
